@@ -7,7 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <canvas id="gameCanvas"></canvas>
+    <div id="loadingScreen">Loading...</div>
+    <div id="startScreen" class="screen">
+        <h1>Welcome to Block Game</h1>
+        <button id="nameButton">Choose Your Name</button>
+        <input type="text" id="nameInput" placeholder="Enter your name" style="display: none;">
+        <button id="startButton" style="display: none;">Start Game</button>
+        <button id="creditsButton">Credits</button>
+        <p id="credits" style="display: none;">Made by Notchripoff</p>
+    </div>
+    <canvas id="gameCanvas" class="screen" style="display: none;"></canvas>
     <script src="game.js"></script>
 </body>
 </html>
+
